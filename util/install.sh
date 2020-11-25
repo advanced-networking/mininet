@@ -172,7 +172,7 @@ function mn_deps {
                         python-pep8 ${PYPKG}-pexpect ${PYPKG}-tk
     else  # Debian/Ubuntu
         $install gcc make socat psmisc xterm ssh iperf telnet \
-                 ethtool help2man pyflakes pylint pep8 \
+                 ethtool help2man ${PYPKG}-pyflakes pylint ${PYPKG}-pep8 \
                  ${PYPKG}-setuptools ${PYPKG}-pexpect ${PYPKG}-tk
         $install iproute2 || $install iproute
         $install cgroup-tools || $install cgroup-bin
